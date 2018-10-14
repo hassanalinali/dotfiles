@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo -s -u $USER<<EOF
 
 dir=~/.dotfiles/
 
@@ -16,5 +17,8 @@ sudo apt-get install papirus-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
 
 # Wallpaper
-
 gsettings set org.gnome.desktop.background picture-uri "file://${dir}/theme/wallpaper.png"
+
+# Dconf theming
+gsettings set org.gnome.desktop.wm.preferences workspace-names "['Web','Files', 'Notes', 'Dev','Misc', 'Terminals']"
+EOF

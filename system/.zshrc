@@ -8,7 +8,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 # Aliases
