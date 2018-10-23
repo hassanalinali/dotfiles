@@ -29,6 +29,5 @@ for file in $files; do
 done
 
 ## Other
-cd $other
-cp micro.json ~/.config/micro/settings.json
+cp $other/micro.json ~/.config/micro/settings.json
 EOF

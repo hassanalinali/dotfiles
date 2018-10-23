@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo -s -u $USER<<EOF
+# sudo -s -u $USER<<EOF
 dir=~/.dotfiles
 
 # Add all binary files from folder
@@ -8,10 +8,13 @@ cp -r $dir/bin/ $HOME/
 # Curl
 sudo apt-get install curl -yq
 
+# Git
+sudo apt-get install git -yq
+
 # Zsh
 sudo apt-get install zsh -yq
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/loket/oh-my-zsh/feature/batch-mode/tools/install.sh)"
-chsh -s $(which zsh)
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/loket/oh-my-zsh/feature/batch-mode/tools/install.sh)"
+# chsh -s $(which zsh)
 
 # Micro
 sudo snap install micro --classic
@@ -23,6 +26,7 @@ sudo apt-get install htop -yq
 
 ## Languages
 sudo apt install golang -yq
+sudo apt install nim -yq
 sudo apt-get install openjdk-8-jdk -yq
 sudo apt-get install openjdk-8-jre -yq
 
@@ -45,4 +49,3 @@ sudo apt-get install chrome-gnome-shell
 
 ## Gnome Extensions
 gnome-shell-extension-cl -e alt-tab-workspace@kwalo.net
-EOF

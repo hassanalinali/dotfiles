@@ -4,7 +4,7 @@ sudo -s -u $USER<<EOF
 dir=~/.dotfiles/
 
 # Interface
-git clone https://github.com/EliverLara/Ant /usr/share/themes/Ant
+sudo git clone https://github.com/EliverLara/Ant /usr/share/themes/Ant
 
 gsettings set org.gnome.desktop.interface gtk-theme "Ant"
 gsettings set org.gnome.desktop.wm.preferences theme "Ant"
@@ -22,3 +22,7 @@ gsettings set org.gnome.desktop.background picture-uri "file://${dir}/theme/wall
 # Dconf theming
 gsettings set org.gnome.desktop.wm.preferences workspace-names "['Web','Files', 'Notes', 'Dev','Misc', 'Terminals']"
 EOF
+
+sudo apt install gnome-session gdm3 -yq
+
+sudo update-alternatives --config gdm3.css
