@@ -4,10 +4,10 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
   git
-  theme
 )
 
 source $ZSH/oh-my-zsh.sh
+source /etc/zsh_command_not_found  
 
 # User configuration
 # Aliases
@@ -15,11 +15,6 @@ alias zshrc="'$EDITOR' ~/.zshrc"
 
 #Env variables
 export EDITOR="micro"
-
-# Binary Personal Folders
-export PATH=$HOME/bin:$PATH
-export PATH=$HOME/bin/graal/bin:$PATH
-export PATH=/usr/lib/go/bin:$PATH
 
 # Disable options
 unsetopt AUTO_CD

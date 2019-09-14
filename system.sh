@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo -s -u $USER<<EOF
+# sudo -s -u $USER<<EOF
 
 # Variables
 

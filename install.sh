@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo -s -u $USER<<EOF
+# sudo -s -u $USER<<EOF
+
 dir=~/.dotfiles
 
 # Add Binary folder

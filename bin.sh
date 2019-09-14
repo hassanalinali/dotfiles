@@ -2,9 +2,6 @@
 # sudo -s -u $USER<<EOF
 dir=~/.dotfiles
 
-# Add all binary files from folder
-cp -r $dir/bin/ $HOME/
-
 # Curl
 sudo apt-get install curl -yq
 
@@ -13,8 +10,8 @@ sudo apt-get install git -yq
 
 # Zsh
 sudo apt-get install zsh -yq
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/loket/oh-my-zsh/feature/batch-mode/tools/install.sh)"
-# chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/loket/oh-my-zsh/feature/batch-mode/tools/install.sh)"
+chsh -s $(which zsh)
 
 # Micro
 sudo snap install micro --classic
@@ -23,20 +20,10 @@ sudo apt install xclip -yq
 # Htop
 sudo apt-get install htop -yq
 
-
-## Languages
-sudo apt install golang -yq
-sudo apt install nim -yq
-sudo apt-get install openjdk-8-jdk -yq
-sudo apt-get install openjdk-8-jre -yq
-
-
 ## Apps
 sudo snap install vscode --classic
 sudo snap install gitkraken
 sudo snap install spotify
-sudo snap install goland --classic
-sudo snap install intellij-idea-community --classic
 
 # Chrome
 sudo apt-get install libxss1 libappindicator1 libindicator7
@@ -48,4 +35,9 @@ sudo apt-get install chrome-gnome-shell
 
 
 ## Gnome Extensions
-gnome-shell-extension-cl -e alt-tab-workspace@kwalo.net
+sudo wget https://raw.githubusercontent.com/cyberalex4life/gnome-shell-extension-cl/master/gnome-shell-extension-cl -O /usr/local/bin/gnome-shell-extension-cl && sudo chmod +x /usr/local/bin/gnome-shell-extension-cl
+
+# gnome-shell-extension-cl -e alt-tab-workspace@kwalo.net
+# Install extensions:
+# 	- User Themes https://extensions.gnome.org/extension/19/user-themes/
+#	- Workspace Matrix https://extensions.gnome.org/extension/1485/workspace-matrix/
