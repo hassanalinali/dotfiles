@@ -39,5 +39,7 @@ sudo wget https://raw.githubusercontent.com/cyberalex4life/gnome-shell-extension
 
 # gnome-shell-extension-cl -e alt-tab-workspace@kwalo.net
 # Install extensions:
-# 	- User Themes https://extensions.gnome.org/extension/19/user-themes/
+# 	- User Themes      https://extensions.gnome.org/extension/19/user-themes/
 #	- Workspace Matrix https://extensions.gnome.org/extension/1485/workspace-matrix/
+#	- Block Caribou    https://extensions.gnome.org/extension/1326/block-caribou/
+#	- Dash to Panel    https://extensions.gnome.org/extension/1160/dash-to-panel/
