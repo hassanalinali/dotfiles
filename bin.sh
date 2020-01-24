@@ -42,5 +42,4 @@ sudo wget https://raw.githubusercontent.com/cyberalex4life/gnome-shell-extension
 # 	- User Themes      		https://extensions.gnome.org/extension/19/user-themes/
 #	- Workspace Matrix 		https://extensions.gnome.org/extension/1485/workspace-matrix/
 #	- Block Caribou    		https://extensions.gnome.org/extension/1326/block-caribou/
-#	- Dash to Panel    		https://extensions.gnome.org/extension/1160/dash-to-panel/
 #	- No Topleft Hot Corner	https://extensions.gnome.org/extension/118/no-topleft-hot-corner/

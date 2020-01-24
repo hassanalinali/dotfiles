@@ -17,10 +17,9 @@ sudo apt-get install papirus-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
 
 # Wallpaper
-gsettings set org.gnome.desktop.background picture-uri "file://${dir}/theme/wallpaper.png"
-
-# Dconf theming
-gsettings set org.gnome.desktop.wm.preferences workspace-names "['Web','Files', 'Notes', 'Dev','Misc', 'Terminals']"
+mkdir ~/Pictures/Mojave
+cp -r $PWD/theme/mojave-background ~/Pictures/Mojave
+gsettings set org.gnome.desktop.background picture-uri "file://$HOME/Pictures/Mojave/mojave.xml"
 EOF
 
 sudo apt install gnome-session gdm3 -yq
